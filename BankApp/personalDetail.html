@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		//var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		//footerH = $('#footerDiv').height();
+	
+		if(headerH == 0){
+			headerH = 50;
+			//footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='index.html';" class="blueBtn">Cancel</a>
+            <h1>Personal Details</h1>
+        </div>
+        <!--Header End-->
+        
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+			<form method="post">
+          
+          <div class="personal_info">
+          
+       <div class="detail"> <div class="name">Title</div> <input class="info" type="text"/></div>
+       <div class="detail"> <div class="name">First Name</div> <input class="info" type="text"/></div>							       
+       <div class="detail"> <div class="name">Middle Name</div><input class="info" type="text"/></div>      	
+       <div class="detail"> <div class="name">Last Name</div> <input class="info" type="text"/></div>
+    	
+        <div class="detail"> 
+        
+        <div class="name" style="width:48%;">Date Of Birth</div> 
+        <div class="date_info" style="float:left;width:50%;">
+                	<input  type="text" style="height:22px;width:25px;float:left;" value="DD"></input>
+					<input type="text" style="height:22px;width:30px;float:left;" value="MM"></input>
+					<input type="text" style="height:22px;width:50px;float:left;" value="YYYY"></input>
+        </div> 
+        </div>							       
+       <div class="detail"> <div class="name">Mobile No.</div><input class="info" type="text"/></div>
+       <div class="detail"> <div class="name">Email</div> <input class="info" type="text"/></div>
+       <div class="detail"> <div class="name">Password</div> <input class="info" type="text"/></div>							       
+       <div class="detail"> <div class="name">Repeat</div><input class="info" type="text"/></div>
+       
+        <div data-role="fieldcontain">
+           <label for="select-choice-1" class="select">Place of Birth</label>
+           <select name="select-choice-1" id="select-choice-1">
+              <option value="standard"> Uk</option>
+              <option value="rush">Us</option>
+              <option value="express">Australia</option>
+              <option value="overnight">Africa</option>
+           </select>
+        </div>
+
+        <div data-role="fieldcontain">
+           <label for="select-choice-1" class="select">Nationality:</label>
+           <select name="select-choice-1" id="select-choice-1">
+              <option value="standard">Indian</option>
+              <option value="rush">American</option>
+              <option value="express">Canadian</option>
+              <option value="overnight">Shrilankan</option>
+           </select>
+        </div>
+        
+        <div data-role="fieldcontain">
+           <label for="select-choice-1" class="select">Marital Status:</label>
+           <select name="select-choice-1" id="select-choice-1">
+              <option value="standard">Single</option>
+              <option value="rush">Married</option>
+              
+           </select>
+        </div>
+        
+        <div data-role="fieldcontain">
+           <label for="select-choice-1" class="select">Dependents:</label>
+           <select name="select-choice-1" id="select-choice-1">
+              <option value="standard">1</option>
+              <option value="rush">2</option>
+              <option value="express">3</option>
+              <option value="overnight">4</option>
+           </select>
+        </div>
+        
+        <div class="check_content"> 
+        <input type="checkbox" style="height:30px;width:28px;">
+        <div class="check_text">Can we contact you occasionally by email and SMS with permissions</div>
+        </div>
+        
+        <div class="check_content"> 
+        <input type="checkbox" style="height:30px;width:28px;">
+        <div class="check_text">I have read and accept the Greater London Finance Privacy Statement and Terms and 
+Conditions. This includes using my personal 
+information to check my identity and carry out 
+a credit check</div>
+        </div><br/><br/><br/>
+       
+       
+       		<div>  	
+       			<a href="#" onClick="document.location.href='addressDetail.html';">
+                	<img src="assets/images/other/my_detailsbtn_03.png" style="width:100%;height:50px;"/>
+            	</a>
+            </div>
+        </div>
+     </div>
+            </form>
+        <!--Content End-->
+        
+</body>
+</html>

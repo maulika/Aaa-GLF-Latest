@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+.myHeaderBG{
+	background-color:rgb(23,106,125);
+	background-image:url(../images/header/header_02.png);
+	background-size:100% 100%;	
+}
+
+.myContentBG{
+	background-color:#990;
+	background-image:url(../images/content/background_01.png);
+	background-size:100% 100%;
+}
+
+.myFooterBG{
+	background-color:rgb(0,0,0);	
+	background-image:url(../images/footer/footer_bg_02.png);
+	background-size:100% 100%;
+	color:#FFF;
+}
+
+#contentDiv{
+	-webkit-overflow-scrolling: touch;
+}
+
+p{
+	font-family:arial Unicode Ms;
+	color:#4c566c;	
+}
+
+.headerTitle{
+	font-family:arial Unicode Ms;
+	font-size:16px;
+}
+
+.defultWhitecolorstyle{
+	color:#FFF;
+	font-size:12px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 25px;
+    margin: 10px;
+}
+
+.drakwhiteText{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family=Helvetica Neue;
+	color-code=#4c566c;
+}
+
+.blueBtn{
+	background-image:url(../images/other/blue_btn_bg.png);
+	background-size:100% 100%;
+	border-style:none;
+	color:#FFF;
+	border-bottom-style:none;
+}
+
+.redBtn{
+	background-image:url(../images/header/applybtn_bgfull_03.png);
+	background-size:100% 100%;
+	border-style:none;
+	color:#FFF;
+	border-bottom-style:none;
+}
+
+.backBtn{
+	background-image:url(../images/header/backbtn_bg_03.png);
+	background-size:100% 100%;
+	border-style:none;
+	color:#FFF;
+	border-bottom-style:none;
+}
+
+.acceptGreenBtn{
+	background-image:url(../images/other/acceptbtn_bg_03.png);
+	background-size:100% 100%;
+	border-style:none;
+	color:#FFF;
+	border-bottom-style:none;
+}
+
+.loginBtn{
+	background-size:100% 100%;
+}
+
+.homeBtn{
+	background:url(../all_done/images/home_btn_03.png)no-repeat;
+	background-size:100% 100%;
+}
+
+.applyBtn{
+	background:url(../about/images/apply_btn_03.png)no-repeat;
+	background-size:100% 100%;
+}
+	
+.acceptBtn{
+	background:url(../t&c/images/accept_btn_03.png)no-repeat;
+	background-size:100% 100%;
+}
+
+.homepagePriceText{
+	font-size:20px;
+	color:#009;	
+}
+
+.leftHeader{
+	background:url(../images/other/settingIcon.png)no-repeat;
+	background-size:100% 100%;
+	float:left;
+	margin-left:8px;
+	height:25px;
+	margin-top:-37px;
+}
+
+
+.personal_info{
+	text-align:left;
+	width:100%;
+	height:100px;
+	
+	}
+.info{ float:right;
+width:50%;
+}
+
+.name{
+	float:left;
+	width:40%;
+	}
+.detail{
+	width:100%;
+	height:50px;
+	}
+
+.check_content{
+	width:100%;
+	height:50px;
+	
+}
+
+.check_content input{
+	float:left;
+	width:10%;
+	}
+.check_text{
+	float:right;
+	width:90%;
+	}
+@media all and (max-width: 28em){
+    .ui-grid-a .ui-block-a,
+    .ui-grid-a .ui-block-b {
+        width: 100%;
+        clear: left;
+    }
+}

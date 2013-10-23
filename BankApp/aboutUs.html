@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		//var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		//footerH = $('#footerDiv').height();
+	
+		if(headerH == 0){
+			headerH = 50;
+			//footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='allDone.html';" class="backBtn">Back</a>
+            <h1>Contact Us</h1>
+            <a href="#" onClick="document.location.href='index.html';" class="redBtn">Apply</a>
+        </div>
+        <!--Header End-->
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+            
+            <h2>About GLF Ltd</h2>
+            <p>
+            GLF have been providing short term loans for a number 
+of years now. The launch or our website means we can 
+reach and help a wider market, and provide a safe and 
+secure area where customers can manage their accounts.</p>
+
+<p>Our friendly and flexible way of working has seen our 
+client base grow rapidley over the last year or so, and 
+our short term loans online will help us to transform 
+money lending in the UK.</p>
+
+<p>You can apply online or by telephone. GLF's online 
+registration is fast and effective, The application takes a 
+few minutes from start to finish.and means you can 
+have your funds on the day of your application if 
+approved.</p>
+
+<p>At GLF we understand your frustration when you are 
+running low on money and you're in need of cash for 
+any number of reason. Our friendly and helpful service 
+has seen us help thousands of customers in this situation.</p>
+
+<p>Our customers return time after time for quick loans and 
+top up loans to cover any unforeseen circumstance that 
+may arise. </p>
+
+<p>GLF Limited is a responsible lender and is registered as 
+a money lender with the Office of Fair Trading under the 
+Consumer Credit Act Licence number 625155
+            </p>
+<a href="#" onClick="document.location.href='index.html';">
+<img src="assets/images/other/apply_now_btn_03.png" style="width:100%;height:50px;"/>
+</a>
+        </div>
+        <!--Content End-->
+        
+        
+       
+
+</body>
+</html>

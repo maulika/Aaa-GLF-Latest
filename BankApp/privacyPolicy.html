@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		//var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		//footerH = $('#footerDiv').height();
+	
+		if(headerH == 0){
+			headerH = 50;
+			//footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='allDone.html';" class="backBtn">Back</a>
+            <h1 class="headerTitle">Privacy Policy</h1>
+            <a href="#" onClick="document.location.href='index.html';" class="acceptGreenBtn">Apply</a>
+        </div>
+        <!--Header End-->
+        
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+            
+            <h2>Privacy Policy</h2>
+            <a href="#" onClick="document.location.href='termsAndConditions.html';" style="text-decoration:none;"><p2 style="color:#0a75b5;">Click here to view our Privacy Policy</p2></a>
+            
+            <p>
+            We at GLF take it very seriously when it comes to the 
+security and use of your personal information. This is 
+our Privacy Policy which we hope will help you feel at 
+ease with our service.</p>
+
+<p>
+Our Privacy Policy applies to all current and former 
+customers and may change from time to time. We 
+reserve the right to update or modify this Policy at 
+any time, with or without notice. Please also read the 
+loan terms and conditions (sent via email during the 
+application), which provide further details of our 
+processing and should be read together with this 
+Privacy Policy.</p>
+
+<p>Your consent<br>
+By submitting your details and/or using our service 
+you accept this Privacy Policy and expressly consent 
+to the use and disclosure of your personal information 
+in the manner described below. If you object to any of 
+the potential uses described please donít register.<p>
+
+<p>Security<br>
+We recognise the need for appropriate protection and 
+management of the personal and financial information 
+you share with us. We protect that information using 
+secure socket layer (SSL) encryption technology and 
+by limiting employee access on a need-to-know basis. 
+We store data in encrypted form on computers and 
+control access via secure web pages. We employ 
+firewalls and other security technologies to protect our 
+servers from external attack.</p>
+
+<p>
+Our security systems meet or exceed industry standards and we are constantly monitoring internet developments to ensure our systems evolve as required. We also test our systems regularly to make sure our security mechanisms are up to date.</p>
+
+<p>Finally, we are subject to UK data protection laws, which we comply with fully and give the greatest respect.</p>
+
+<p>Collecting your data<br>
+We collect information about you in two ways - directly from your online application and also from outside sources such as credit bureaus and customer service providers. We may use data that identifies you (your personal information) for a number of things including: statistical analysis; to develop and improve our products; to assess lending risks; to update your records; to identify which of our products, or our partners' products, might interest you; to identify and prevent fraud, money laundering and other criminal activities; to carry out regulatory checks and for market research.<p>
+
+<p>Additional data collection<br>
+In addition to the personal and financial information you submit, we may collect information about your computer including, where available, your IP address, operating system and browser type - for system administration and to report aggregate information to our advertisers.<p>
+
+<p>This is statistical data about browsing actions and patterns and does not identify any individual. We may also obtain information about your general internet usage by using a cookie file which is stored on the hard drive of your computer. Cookies enable us to improve our service to you, estimate our audience size and usage patterns, store <p>
+
+
+
+
+
+
+        </div>
+        <!--Content End-->
+        
+</body>
+</html>

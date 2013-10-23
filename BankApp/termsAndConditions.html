@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		//var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		//footerH = $('#footerDiv').height();
+	
+		if(headerH == 0){
+			headerH = 50;
+			//footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='allDone.html';" class="backBtn">Back</a>
+            <h1 class="headerTitle">Terms & Conditions</h1>
+            <a href="#" onClick="document.location.href='index.html';" class="acceptGreenBtn">Apply</a>
+        </div>
+        <!--Header End-->
+        
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+            
+            <h2>Terms & Conditions</h2>
+            <a href="#" onClick="document.location.href='privacyPolicy.html';" style="text-decoration:none;"><p2 style="color:#0a75b5;">Click here to view our Privacy Policy</p2></a>
+            
+            
+
+<p>CANCELLATION</p>
+
+
+
+<p>
+1.1 If you wish to cancel this Agreement you may do 
+soprovided that you have given us written notice of 
+yourwish to do so within seven days of the date of the 
+Agreement. The date of the agreement is the date it is 
+signed by us.</br>
+1.2 If you wish to exercise your right under 1.1 you must
+a. relurn to us with the cancellation notice document all 
+documents we have sent to you
+b. within 14 days of the date of this agreement return to 
+us any cheque we have sent you or if you have paid our 
+cheque into your accounts send us a bankers daft or 
+cleared funds into our designated account for the same 
+amount or if cash is given the same to be returned</br>
+1.3 If you do not comply with the time limits in Condition 
+1 you will lose your ability to cancel this agreement and
+the Loan will continue on the terms of this agreement as 
+if no notice of cancellation had ever been given by you</p>
+
+<p>PAYMENTS</p>
+
+<p>2.1 We will open and account in your name and debit it 
+with the Total Amount of Credit shown at ( ) on page 1, 
+the Application Assessment & Completion Costs shown 
+in 1 on page 1. on the date when the Amount of Credit 
+shown at A on page 1 is released</br>
+2.2 Any payment received from you over and above your 
+normal weekly/ monthly payment will be credited to the 
+account upon the date we receive it as cleared funds 
+and treated as payments in lieu of interest payments due 
+under this Agreement PROVIDED THAT such payments 
+have been made in accordance with condition 6</br>
+2.3 You must repay the Total Amount of Credit, any 
+Application Assessment & Completion Costs with interest outstanding on the settlement date. All payments made up to the settlement date will only be treated as interest payments. The amount each weekly/ monthly payment Is the amount shown on page 1 or any changed amount which comes due under Changes in the monthly payment as per condltion 4.</br>
+2.4 The first weekly/monthly payment is due one week month after the date of this agreement and future payments are due on corresponding day each week month thereafter</br>
+2.5 At the end of the payment period you must pay the whole amount of capital borrowed together with any expenses, costs and interest which you have not paid</br>
+2.6 In the event of any unpaid Interest balances remaining at the end of the repayment period provided for in ( ) on page1, interest will continue to accrue at the prevailing rate and expenses will be payable in accordance with condition gexpenses)</p>
+
+<p>CHANGE IN THE PERIODIC INSTALL PAYMENTS</p>
+<p>
+3.1 We may change the weekly/ monthly payment at any time for any of the following reasons:</br>
+a. to reftect a change interest rate or Base Rate</br>
+b. to provide for the repayment of any Expenses in accordance with condlUon 12and any Interest on them</br>
+c. to make sure the unpaid balance is paid by the date the last monthly payment is due.</br>
+d. payments are late. uncleared. default or not for the correct amount and paid when due and owing</br>
+e. if your payment book is lost. stolen or for any other reason not readily available when request by us or any member of our starr or agent instructed to coiled payments on our behalf.</br>
+3.2 Charges will be levied to the agreed weekly/ monthly payments until such charges and arrears are paid up in full at which Ume the agreed weekly/ monthly instalments will be reinstated</br>
+</p>
+<p>CHANGE IN THE PAYMENT DATE</p>
+<p>4.1 You may ask to change the payment day by sending to us a signed request to be received by us at least 7 days before the next existing payment day. The change must not result in a weekly/monthly payment beingmissed. We will make the requested change with effect from the week in month following the request was received. A one off fee adjustment will be made which must be paid before the first payment on the revised payment date</br>
+4.2 Only one payment day change may be made within any six month period
+</p>
+
+<p>SECURITY</p>
+<p>
+5.1 You will execute the Mortgage to secure the monies owed by you under this Agreement. The Mortgage has been given to you for execution together with this Agreement.</br>
+5.2 The terms of the Mortgage are incorporated in and form part of this Agreement
+</p>
+
+<p>EARLY SETTLEMENT</p>
+<p>6.1 You may seWe this Agreement at any time by giving us written notice of your intention to do so and by paying the balance outstanding plus fees. Any payments and over payments made prior to the settlement date will only be attributed to interest due under this Agreement and not be made towards the
+capital outstanding which can only be credited on the settlement date.</p>
+
+<p>DEFAULT</p>
+<p>
+7.1 We may demand that you immediately pay to us the unpaid balance. if any of the following occur and you have failed to comply with the notice we must give under the Consumer Credit Act 1974:</br>
+a. you fail to make payment within 7 days of it becoming due</br>
+b. you breach terms of the Loan</br>
+c. The Loan Is no longer valid or binding for any reason</br>
+d. a bankruptcy order is made against you or we reasonably believe that one Is likely to be made</br>
+e. you enter into a voluntary arrangement with your creditors</br>
+f. any Information provided by you proves Incomplete or inaccurate</br>
+g. you fail to inform us of any material change in your circumstances including but not limited to a change in your address</br>
+7.2 Missing payments could have severe consequences and make obtaining credit more difficult. If the agreed weekly/ monthly repayments are not made in full and on time or if you breach any other term of this Agreement or the legal mortgage we will charge for any costs which we reasonably incur as a result of the breach</p>
+
+<p>DELAY IN ENFORCEMENT</p>
+<p>
+8.1 Our rights under this Agreement will not be affected by any delay in enforcing them
+</p>
+<p>
+EXPENSES</p>
+<p>
+9.1 If you breach any of your obligations under this Agreement, you must pay all costs, fees and expenses as they are whether demanded or not which we reasonably incur in connection with this agreement. Expenses indude:</br>
+a. the costs we incur in any legal proceedings relating to this agreement</br>
+b. the costs we incur in exercising or enforcing any of our legal rights under this agreement</br>
+c. the costs we incur in putting right any failure of yours to keep to the terms and conditions of this agreement</br>
+d. any administration costs we incur in doing any work in connection with this agreement induding costs arising from locating you and communicating with you, collecting sums due and enforcing the Loan</br>
+9.2 If you breach any of your obligations under this agreement, we may recover our administration costs we incur in doing any work in connection with this agreement</br>
+9.3 We have standard rate for Expenses which vary from time to time. We will let you know what these expenses are at any time on request. We will send a notice to you if any of the expenses referred to above become payable by you to us
+</p>
+
+<p>TRANSFER</p>
+<p>
+10.1 We may transfer some or all of our rights under this agreement to another person at any time.
+</p>
+<p>
+CHANGE OF ADDRESS</p>
+
+<p>11.1 You must tell us immediately if you stop living at the address shown on page 1</p>
+
+<p>CONFIDENTIALITY</p>
+<p>12.1 Any telephone call to or from us will be monitored or recorded both in the interests of security and for starr training purposes to improve our services to customers</br>
+12.2 Not to disclose our agreement or rent book to any third party as this is the property of the Company and remains confidential information
+</p>
+<p>
+DATA PROTECTION</p>
+<p>
+13.1 In assessing your application we may make enquiries about you induding searching any records held by Credit References Agencies and checking your details with Fraud Prevention Agencies. If you give us false or inaccurate and we suspect fraud we will record this. The Credit Reference and Fraud Preventions Agencies will keep details or any searches.
+</p>
+<p>
+THE ENTIRE AGREEMENT></p>
+<p>
+14.1 The credit agreement together with the Mortgage incorporates all terms agreed between you and us and supersedes any prior representations, undertakings or agreements made in connection with the subject matter agreement</br>
+14.2 If any of the terms of the Agreement shall be deemed unenforceable or invalid it shall be treated in isolation and shall not invalidate the entire Agreement</br>
+14.3 By Signing this Agreement you are confirming thatyou have read and understood the information in this Agreement.
+ </p>  
+
+        </div>
+        <!--Content End-->
+        
+        
+       
+
+</body>
+</html>

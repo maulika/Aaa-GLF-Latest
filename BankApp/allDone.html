@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		footerH = $('#footerDiv').height();
+	
+		if(footerH == 0 || headerH == 0){
+			headerH = 50;
+			footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH+footerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='login.html';" class="blueBtn">Login</a>
+            <h1 class="headerTitle">All Done</h1>
+            <a href="#" onClick="document.location.href='index.html';" class="blueBtn">Home</a>
+        </div>
+        <!--Header End-->
+        
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+            <center>
+                <img src="assets/images/logo_03.png"/>
+            </center>
+ <p>
+            Hi Tony, your application has been submitted and and is currently being reviewed by our underwriters. 
+</p>
+
+<p>An email has been sent to your registered email address with a copy of your application, and details of your username and password and how to log into your account.
+</p>
+<p>
+You can monitor the progress of your application by accessing your account, and once your loan has been approved, you will be abe to manage your 
+account and make payments via your account.
+</p>
+<p>
+One of our members of staff will contact you very shortly.
+</p>
+<p>
+Thank you
+</p>
+
+
+            </p>
+        </div>
+        <!--Content End-->
+        
+        
+        <!--Footer Start-->
+        <div id="footerDiv" data-role="footer" data-position="fixed" >
+            <div data-role="navbar">
+                <ul>
+                   <li><a href="#" onClick="document.location.href='aboutUs.html';" data-icon="aboutFooterIcon" class="myFooterBG">About Us</a></li>
+                    <li><a href="#" onClick="document.location.href='termsAndConditions.html';" data-icon="tandCFooterIcon" class="myFooterBG">T & Cs</a></li>
+                    <li><a href="#" onClick="document.location.href='contactUs.html';" data-icon="contactUsFooterIcon" class="myFooterBG">Contact Us</a></li>
+                    <li><a href="#" onClick="document.location.href='faq.html';" data-icon="faqFooterIcon" class="myFooterBG">Faq</a></li>
+                </ul>
+	        </div><!-- /navbar -->
+		</div><!-- /footer -->
+        
+	</div><!-- /Page POarent DIV End -->
+
+</body>
+</html>

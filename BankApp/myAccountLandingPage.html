@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		headerH = $('#headerDiv').height();
+	
+		var headerDiv1H = document.getElementById('headDiv1').style.height;
+		var headerDiv2H = document.getElementById('headDiv2').style.height;
+					
+		if(headerH == 0){
+			headerH = 50;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45-(parseInt(headerDiv1H)+parseInt(headerDiv2H));
+		//alert(contentH);
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+	<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            
+            <a style="visibility:hidden;"></a>
+            <h1 class="headerTitle">ACC120618001</h1>
+            <a href="#" onClick="document.location.href='login.html';" class="blueBtn">Log Out</a>
+            <img src="assets/images/other/settingIcon.png" class="leftHeader" />
+        </div>
+        <!--Header End-->
+        
+        <div id="headDiv1" style="background-color:#000;height:30px;">
+        	<span class="defultWhitecolorstyle">My account details:</span>
+        </div>
+        
+        <div id="headDiv2" style="background-color:#4a6587;height:30px;">
+	        <span class="defultWhitecolorstyle">Agreement No. AGR120813001</span>
+        </div>
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">   
+	        <h2>Hi Tony</h2> 
+        </div>
+        <!--Content End-->
+    </div>
+            
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+    <link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link href="assets/style/myStyle.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<script>
+
+	function init(){
+		onAppResize();
+	}
+	
+	function onAppResize(){
+		var headerH = document.getElementById('headerDiv').style.height;
+		//var footerH = document.getElementById('footerDiv').style.height;
+		headerH = $('#headerDiv').height();
+		//footerH = $('#footerDiv').height();
+	
+		if(headerH == 0){
+			headerH = 50;
+			//footerH = 45;
+		}
+		
+		var appHeight = window.innerHeight;
+		var contentH = appHeight-(headerH)-45;
+	
+		document.getElementById('contentDiv').style.height = contentH+'px';
+	}
+</script>
+<body onResize="onAppResize()" onLoad="init()"> 
+
+<div data-role="page" id="page" style="height:auto;" class="myContentBG">
+    
+        <!--Header Start-->
+        <div id="headerDiv" data-role="header" class="myHeaderBG">
+            <a href="#" onClick="document.location.href='allDone.html';" class="backBtn">Back</a>
+            <h1>FAQ</h1>
+            <a href="#" onClick="document.location.href='index.html';" class="redBtn">Apply</a>
+        </div>
+        <!--Header End-->
+        
+        
+        <!--Content Start-->
+        <div data-role="content"  id="contentDiv">	
+            
+            <h2>FAQ</h2>
+        <p>
+How does GLF work?</br>
+GLF provides flexible loans to help those in short term 
+cash flow difficulties. We do not provide large long term 
+loans. Our online service allows you to apply quickly and 
+easily, and provided everything is in order, receive your 
+cash on the same day.</p>
+
+<p>What may I use the Cash Loan for?</br>
+You may use a GLF Loan for your bills and payments or 
+pay for any unforeseen expenses and costs that you may
+have incurred, including deposit payments on vehicles, 
+holiday money or for anything else you may need urgently.</p>
+
+<p>Am I eligible?</br>
+To be eligibility for a GLF loan, you must be employed 
+and live in the United Kingdom, you must have a stable 
+income where your salary is paid into a UK bank account 
+and you must be over the age of 18.</p>
+
+<p>What if I have a poor credit history?</br>
+This should not affect your application. We will consider 
+most circumstances within the above mentioned criteria. 
+The most important aspect is to show that you are able 
+to pay the loan off at your next payday. Our Terms and 
+Conditions (once your loan agreement is presented to 
+you) will give you more information regarding the 
+requirements.</p>
+
+<p>
+I am not a homeowner. Is this a problem?</br>
+No, it is not a problem. We offer GLF Loans to tenants, 
+homeowners and people living in shared accommodation.</p>
+
+<p>How do I settle my Loan?</br>
+We will use your debit card to deduct the repayment amount (as confirmed by you) on the specified date of the loan agreement. All we ask is that you have the funds to cover it.</p>
+
+<p>How long does it take to get my cash?</br>
+In most cases, funds are cleared within 24 hours.
+            </p>
+
+        </div>
+        <!--Content End-->
+        
+        
+       
+
+</body>
+</html>
